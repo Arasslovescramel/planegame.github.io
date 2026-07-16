@@ -1,1 +1,69 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plane Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <!-- Ana Menü -->
+    <div id="menu">
+        <h1>✈ Plane Game</h1>
+        <button id="playBtn">OYNA</button>
+    </div>
+
+    <!-- Oyun -->
+    <div id="game" style="display:none;">
+
+        <!-- Sol Üst -->
+        <div id="dayBox">
+            Gün: <span id="day">1</span>
+        </div>
+
+        <!-- Sağ Üst -->
+        <div id="goldBox">
+            🪙 Altın:
+            <span id="gold">100</span>
+        </div>
+
+        <!-- Sol Menü -->
+        <div id="leftMenu">
+
+            <button id="planesButton">
+                Uçaklarım
+            </button>
+
+            <button id="marketButton">
+                Market
+            </button>
+
+            <div id="planesPanel" class="panel"></div>
+
+            <div id="marketPanel" class="panel"></div>
+
+        </div>
+
+        <!-- Orta -->
+
+        <div id="center">
+
+            <button id="startDay">
+                Günü Başlat
+            </button>
+
+            <button id="finishDay" style="display:none;">
+                Günü Bitir
+            </button>
+
+            <div id="events"></div>
+
+        </div>
+
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
