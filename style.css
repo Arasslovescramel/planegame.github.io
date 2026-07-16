@@ -1,1 +1,200 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
 
+body{
+    background:#0f172a;
+    color:white;
+    overflow:hidden;
+}
+
+/* Ana Menü */
+
+#menu{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+}
+
+#menu h1{
+    font-size:55px;
+}
+
+#playBtn{
+    padding:18px 45px;
+    font-size:28px;
+    cursor:pointer;
+    border:none;
+    border-radius:12px;
+    background:#22c55e;
+    color:white;
+    transition:.25s;
+}
+
+#playBtn:hover{
+    transform:scale(1.08);
+}
+
+/* Oyun */
+
+#game{
+    width:100vw;
+    height:100vh;
+}
+
+/* Gün */
+
+#dayBox{
+    position:absolute;
+    top:20px;
+    left:20px;
+    font-size:26px;
+    background:#1e293b;
+    padding:12px 20px;
+    border-radius:12px;
+}
+
+/* Altın */
+
+#goldBox{
+    position:absolute;
+    top:20px;
+    right:20px;
+    font-size:26px;
+    background:#1e293b;
+    padding:12px 20px;
+    border-radius:12px;
+    color:gold;
+}
+
+/* Sol Menü */
+
+#leftMenu{
+    position:absolute;
+    left:20px;
+    top:120px;
+    width:260px;
+}
+
+#leftMenu button{
+    width:100%;
+    padding:15px;
+    margin-bottom:10px;
+    border:none;
+    border-radius:10px;
+    background:#2563eb;
+    color:white;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.panel{
+    margin-top:10px;
+    background:#1e293b;
+    border-radius:10px;
+    padding:10px;
+    max-height:350px;
+    overflow-y:auto;
+    display:none;
+}
+
+/* Orta */
+
+#center{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+}
+
+#startDay,
+#finishDay{
+    padding:20px 50px;
+    font-size:28px;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+    margin-bottom:25px;
+}
+
+#startDay{
+    background:#22c55e;
+    color:white;
+}
+
+#finishDay{
+    background:#ef4444;
+    color:white;
+}
+
+/* Olaylar */
+
+#events{
+    width:700px;
+    height:320px;
+    overflow-y:auto;
+    background:#1e293b;
+    border-radius:12px;
+    padding:15px;
+    text-align:left;
+}
+
+.event{
+    margin-bottom:10px;
+    padding:10px;
+    border-radius:8px;
+    background:#334155;
+}
+
+.success{
+    color:#22c55e;
+}
+
+.crash{
+    color:#ef4444;
+    font-weight:bold;
+}
+
+/* Uçak Kartı */
+
+.planeCard{
+    background:#334155;
+    padding:12px;
+    border-radius:10px;
+    margin-bottom:10px;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.planeCard:hover{
+    background:#475569;
+}
+
+.deleteBtn{
+    width:100%;
+    margin-top:8px;
+    background:#dc2626 !important;
+}
+
+.buyBtn{
+    width:100%;
+    margin-top:8px;
+    background:#22c55e !important;
+}
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#64748b;
+    border-radius:10px;
+}
